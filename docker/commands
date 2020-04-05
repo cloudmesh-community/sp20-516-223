@@ -1,0 +1,33 @@
+# Students Sample Testing
+
+## Build the container image
+docker build -t students .
+
+## List the iamges
+docker images
+
+#Using the image, create and run the container.
+docker run --name myfirst -d -p 5000:80 students
+
+#Test the rest-api is deployed and running.
+curl http://localhost:5000/student/rahul
+
+#List the containers
+docker container list
+
+#Stop the container
+docker stop myfirst
+
+#Remove the container
+docker rm myfirst
+
+#Remove the image
+docker rmi 5d8e1141a4a2
+
+# Docker Compose
+## Linux Install
+sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+# Kubernetes
+# Linux Install
+curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.25.0/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
