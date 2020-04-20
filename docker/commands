@@ -31,3 +31,13 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-
 # Kubernetes
 # Linux Install
 curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.25.0/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
+
+# Singularity
+wget https://github.com/sylabs/singularity/releases/download/v3.5.3/singularity-3.5.3.tar.gz
+tar -zxf singularity-3.5.3.tar.gz
+
+wget https://github.com/singularityware/singularity/releases/download/2.5.1/singularity-2.5.1.tar.gz tar
+
+# Exercies
+docker run --name mongo -v /home/cc/mongo-files/data:/data/db  -v /home/cc/mongo-files:/opt/keyfile --hostname="mongo.rahul.mac" -p 27017:27017 -d mongo:latest --smallfiles
+docker run --name mongo -v /home/cc/mongo-files/data:/data/db  -v /home/cc/mongo-files:/opt/keyfile --hostname="mongo.rahul.mac" -p 27017:27017 -d mongo:latest --smallfiles
