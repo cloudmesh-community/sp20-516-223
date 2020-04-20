@@ -1,9 +1,20 @@
 # Notebook Rahul Dharmchand sp20-516-223
 
+## Week 04/20/20 - 05/26/20
+
+* [ ] Project : Complete Google Compute Project.
+* [ ] Chapter : Review FAAS
+
+## Week 04/05/20 - 04/19/20
+
+* [x] Project : google compute commands (meta list/set/delete, key_delete)
+* [x] Project : google compute pytests.
+* [x] Completed Google Cloud Infrastructure Foundation Course on Coursera.
+
 ## Week 03/31/20 - 04/05/20 
 
-* [ ] Project : google compute commands (cms key)
-* [ ] Review Docker Chapter
+* [x] Project : google compute commands (cms key)
+* [x] Review Docker Chapter
 
 ## Week 03/23/20 - 03/30/20 
 
