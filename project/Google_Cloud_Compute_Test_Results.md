@@ -1,14 +1,9 @@
 # Google Cloud Compute Test Results
 
-## Bencmark
+## Benchmark
 
-'''
-../cloudmesh-cloud/tests/cloud/test_00_sys.py::Test_Sys::test_benchmark
-'''
-
-+------------------+---------------------------------------------------------------------------------------------------+
-| Attribute        | Value                                                                                             |
-|------------------+---------------------------------------------------------------------------------------------------|
+| Attribute  | Value  |
+|---|---|
 | cpu_count        | 4                                                                                                 |
 | mem.active       | 6.8 GiB                                                                                           |
 | mem.available    | 7.2 GiB                                                                                           |
@@ -31,4 +26,63 @@
 | uname.system     | Darwin                                                                                            |
 | uname.version    | Darwin Kernel Version 18.7.0: Mon Feb 10 21:08:45 PST 2020; root:xnu-4903.278.28~1/RELEASE_X86_64 |
 | user             | rahul                                                                                             |
-+------------------+---------------------------------------------------------------------------------------------------+
+|   |   |
+
+## Results
+
+|Timer|Status|Time|Start|Tag|
+|---|---|---|---|---|
+|test_00_sys/|test_cms_help|ok|1.968|2020-04-25 23:30:32|google|
+|   |   |   |   |   |
+|test_02_key/|test_clear_local_database|ok|0.042|2020-04-25 23:30:45|google|
+|test_02_key/|test_clear_cloud_database|ok|0.022|2020-04-25 23:31:16|google|
+|test_02_key/|test_upload_key_to_database|ok|0.063|2020-04-25 23:30:45|google|
+|test_02_key/|test_upload_key_to_cloud|ok|13.463|2020-04-25 23:30:45|google|
+|test_02_key/|test_list_key_from_cloud|ok|1.471|2020-04-25 23:30:59|google|
+|test_02_key/|test_delete_key_from_cloud|ok|13.473|2020-04-25 23:31:00|google|
+|test_02_key/|test_key_delete|ok|0.044|2020-04-25 23:31:14|google|
+|test_02_key/|test_cms_local|ok|2.573|2020-04-25 23:31:14|google|
+|test_02_key/|test_cms_cloud|ok|20.694|2020-04-25 23:31:16|google|
+|   |   |   |   |   |
+|test_04_flavor/|test_empty_database|ok|0.028|2020-04-25 23:31:38|google|
+|test_04_flavor/|test_provider_flavor|ok|1.31|2020-04-25 23:31:38|google|
+|test_04_flavor/|test_provider_flavor_update|ok|1.49|2020-04-25 23:31:40|google|
+|test_04_flavor/|test_cms_flavor_refresh|ok|2.797|2020-04-25 23:31:42|google|
+|test_04_flavor/|test_cms_flavor|ok|1.337|2020-04-25 23:31:45|google|
+|   |   |   |   |   |
+|test_05_image/|test_empty_database|ok|0.037|2020-04-25 23:31:47|google|
+|test_05_image/|test_provider_image|ok|5.271|2020-04-25 23:31:47|google|
+|test_05_image/|test_provider_image_update|ok|4.681|2020-04-25 23:31:53|google|
+|test_05_image/|test_cms_image_refresh|ok|6.065|2020-04-25 23:31:58|google|
+|test_05_image/|test_cms_image|ok|1.344|2020-04-25 23:32:04|google|
+|   |   |   |   |   |
+|test_07_secgroup_provider/|test_load|ok|0.047|2020-04-25 23:32:06|google|
+|test_07_secgroup_provider/|test_list_variables|ok|0.001|2020-04-25 23:32:07|google|
+|test_07_secgroup_provider/|test_list_secgroups|ok|1.593|2020-04-25 23:32:07|google|
+|test_07_secgroup_provider/|test_list_secgroups_rules|ok|1.423|2020-04-25 23:32:08|google|
+|test_07_secgroup_provider/|test_secgroups_add|ok|0.04|2020-04-25 23:32:10|google|
+|test_07_secgroup_provider/|test_upload_secgroup|ok|16.989|2020-04-25 23:32:11|google|
+|test_07_secgroup_provider/|test_secgroups_delete|ok|16.373|2020-04-25 23:32:29|google|
+|test_07_secgroup_provider/|test_secgroups_delete_again|ok|2.272|2020-04-25 23:32:47|google|
+|   |   |   |   |   |
+|test_08_vm_provider/|test_provider_vm_create|ok|18.565|2020-04-25 23:33:29|google|
+|test_08_vm_provider/|test_provider_vmprovider_vm_list|ok|1.438|2020-04-25 23:33:49|google|
+|test_08_vm_provider/|test_provider_vm_wait|ok|0.057|2020-04-25 23:33:50|google|
+|test_08_vm_provider/|test_provider_vm_ssh|failed|None|2020-04-25 23:33:50|google|
+|test_08_vm_provider/|test_provider_vm_info|ok|1.211|2020-04-25 23:33:52|google|
+|test_08_vm_provider/|test_vm_status|ok|1.159|2020-04-25 23:33:53|google|
+|test_08_vm_provider/|test_provider_vm_stop|ok|35.242|2020-04-25 23:33:54|google|
+|test_08_vm_provider/|test_provider_vm_start|ok|10.038|2020-04-25 23:34:36|google|
+|test_08_vm_provider/|test_provider_vm_terminate|ok|146.026|2020-04-25 23:34:52|google|
+|   |   |   |   |   |
+|test_09_cm_names_find/|test_cm_find_collection|ok|0.035|2020-04-25 23:37:25|google|
+|test_09_cm_names_find/|test_cm_find_loop|ok|0.073|2020-04-25 23:37:25|google|
+|test_09_cm_names_find/|test_cm_image_name_cloud|ok|0.02|2020-04-25 23:37:25|google|
+|test_09_cm_names_find/|test_cm_image_name_collection|ok|0.022|2020-04-25 23:37:25|google|
+|test_09_cm_names_find/|test_names_regexp|ok|0.034|2020-04-25 23:37:25|google|
+|test_09_cm_names_find/|test_cm_find_vms|ok|0.02|2020-04-25 23:37:25|google|
+|test_09_cm_names_find/|test_cm_find_ubuntu_in_images|ok|0.019|2020-04-25 23:37:25|google|
+|test_09_cm_names_find/|test_cm_find_cloud_name_attributes|ok|0.02|2020-04-25 23:37:25|google|
+|test_09_cm_names_find/|test_cm_find_vm_collections|ok|0.018|2020-04-25 23:37:25|google|
+|test_09_cm_names_find/|test_cm_find_vm_collections_vm|ok|0.02|2020-04-25 23:37:25|google|
+|test_09_cm_names_find/|test_cm_find_vm_collection_form_parameter|ok|0.017|2020-04-25 23:37:25|google|
