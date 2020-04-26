@@ -1,8 +1,12 @@
 # Notebook Rahul Dharmchand sp20-516-223
 
-## Week 04/20/20 - 05/26/20
+## Week 04/27/20 - 05/03/20
 
-* [ ] Project : Complete Google Compute Project.
+* [ ] Chapter : Review
+
+## Week 04/20/20 - 04/26/20
+
+* [x] Project : Complete Google Compute Project.
 * [ ] Chapter : Review FAAS
 
 ## Week 04/05/20 - 04/19/20
